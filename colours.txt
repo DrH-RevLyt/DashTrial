@@ -1,0 +1,9 @@
+Awamo colour scheme:
+
+Dark Green: 90,32,100,27 (0,102,0; 006600)
+Light Green: 62,0,100,0 (102,204,0; 66cc00)
+Lighter Green: 190,240,160
+Orange: 0,48,93,0 (255,153,0; ff9900)
+Anthrazit Grey: 56,45,45,33 (102,102,102; 666666)
+Dark Grey: 41,32,32,11 (153,153,153; 999999)
+Light Grey: 23,17,18,1 (204,204,204; cccccc)
