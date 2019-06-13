@@ -15,21 +15,29 @@ colors = {
     'orange': '#ff9900',
     'anthrazit-grey': '#666666',
     'dark-grey': '#999999',
-    'light-grey': '#cccccc'
+    'light-grey': '#cccccc',
+    'dark': '#333',
+    'light-text': '#ccc',
+    'white': '#fff'
 }
 
-app.layout = html.Div(style={'backgroundColor': colors['anthrazit-grey']}, children=[
+app.layout = html.Div(style={'backgroundColor': colors['dark']}, children=[
     html.H1(
         children='Hello Dash',
         style={
             'textAlign': 'center',
-            'color': colors['light-grey']
+            'color': colors['white']
         }
     ),
 
     html.Div(children='''
         Dash: A web application framework for python.
-    '''),
+    ''',
+         style={
+             'textAlign': 'center',
+             'color': colors['light-text']
+         }
+     ),
 
     dcc.Graph(
         id='example-graph',
@@ -40,9 +48,11 @@ app.layout = html.Div(style={'backgroundColor': colors['anthrazit-grey']}, child
             ],
             'layout': {
                 'title': 'Dash Data Visualization',
-                'plot_bgcolor': colors['anthrazit-grey'],
-                'paper_bgcolor': colors['background'],
-                'font': {}
+                'plot_bgcolor': colors['dark'],
+                'paper_bgcolor': colors['dark'],
+                'font': {
+                    'color': colors['orange']
+                }
             }
         }
     )
